@@ -1,0 +1,101 @@
+body {
+    width: 580px;
+    overflow-x: hidden;
+    min-height: 60px;
+    margin: 6px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-family: "Helvetica Neue","微软雅黑",Helvetica,Arial,sans-serif;
+    background-color: #f0f0f0;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 4px 0 14px;
+}
+
+.waterfall {
+    font-size: 12px;
+}
+
+.waterfall .line {
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+}
+
+.waterfall .splitLine {
+    margin: 8px 0 4px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.waterfall .line:hover {
+    background-color: #ddd;
+}
+
+.waterfall .line .name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
+
+.waterfall .line .time {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+.waterfall .line .center {
+    height: 100%;
+    margin: 0 175px 0 0;
+}
+
+.waterfall .line .center .item {
+    display: inline-block;
+    height: 100%;
+    min-width: 1px;
+    border-radius: 2px;
+}
+
+.waterfall .total .center .item {
+    float: left;
+}
+
+.waterfall .clear {
+    clear: both;
+}
+
+.waterfall .line .center .dns {
+    background-color: #2ec7c9;
+}
+
+.waterfall .line .center .ct {
+    background-color: #b6a2de;
+}
+
+.waterfall .line .center .st {
+    background-color: #5ab1ef;
+}
+
+.waterfall .line .center .tt {
+    background-color: #ffb980;
+}
+
+.waterfall .line .center .drt {
+    background-color: #d87a80;
+}
+
+.waterfall .line .center .dct {
+    background-color: #7eb00a;
+}
+
+.tip {
+    margin: 15px 0 4px 0;
+}

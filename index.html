@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <title>web performance</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="jquery.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="title">性能--timing API数据</div>
+        <div class="waterfall">
+            <div class="line total">
+                <div class="center">
+                    <div class="dns item"></div>
+                    <div class="ct item"></div>
+                    <div class="st item"></div>
+                    <div class="tt item"></div>
+                    <div class="drt item"></div>
+                    <div class="dct item"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="time totalTime">0 ms</div>
+                <div class="name">总时间</div>
+            </div>
+            <div class="splitLine"></div>
+            <div class="line only" tip="performance.timing.domainLookupEnd - performance.timing.domainLookupStart">
+                <div class="center">
+                    <div class="dns item"></div>
+                </div>
+                <div class="time dnsTime">0 ms</div>
+                <div class="name">DNS查找</div>
+            </div>
+            <div class="line only" tip="performance.timing.connectEnd - performance.timing.domainLookupEnd">
+                <div class="center">
+                    <div class="ct item"></div>
+                </div>
+                <div class="time ctTime">0 ms</div>
+                <div class="name">建立链接</div>
+            </div>
+            <div class="line only" tip="performance.timing.responseStart - performance.timing.connectEnd">
+                <div class="center">
+                    <div class="st item"></div>
+                </div>
+                <div class="time stTime">0 ms</div>
+                <div class="name">首字节到达</div>
+            </div>
+            <div class="line only" tip="performance.timing.responseEnd - performance.timing.responseStart">
+                <div class="center">
+                    <div class="tt item"></div>
+                </div>
+                <div class="time ttTime">0 ms</div>
+                <div class="name">HTML传输完成</div>
+            </div>
+            <div class="line only" tip="performance.timing.domInteractive - performance.timing.responseEnd">
+                <div class="center">
+                    <div class="drt item"></div>
+                </div>
+                <div class="time drtTime">0 ms</div>
+                <div class="name">DOM解析</div>
+            </div>
+            <div class="line only" tip="performance.timing.domComplete - performance.timing.domInteractive">
+                <div class="center">
+                    <div class="dct item"></div>
+                </div>
+                <div class="time dctTime">0 ms</div>
+                <div class="name">页面渲染</div>
+            </div>
+        </div>
+        <div class="tip" style="display: none;"></div>
+    </body>
+</html>
+
