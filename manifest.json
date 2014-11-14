@@ -10,7 +10,6 @@
         "default_popup": "index.html"
     },
 
-    // 该插件面向所有url
     "permissions": [
         "tabs", "<all_urls>"
     ]
